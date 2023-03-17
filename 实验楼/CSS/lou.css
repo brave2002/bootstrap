@@ -1,0 +1,494 @@
+/*导航栏开始*/
+.nav{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #191e29;
+}
+.wrap{
+    margin: 0 auto;
+    width: 1140px;
+}
+.nav-text{
+    height: 50px;
+}
+.nav-text .text-left{
+    font-size: 16px;
+}
+.text-left li{
+    float: left;
+}
+.text-left .logo img{
+    height: 50px;
+}
+.text-left a{
+    display: block;
+    color: #777777;
+    padding: 15px;
+}
+.text-left .logo a{
+    padding: 0;
+}
+.caret{
+    display: inline-block;
+    border: 4px solid transparent;
+    border-top: 4px solid #777777;
+}
+.text-left .courses{
+    position: relative;
+}
+.text-left .caret{
+    position: absolute;
+    top: 25px;
+    right: 1px;
+}
+.text-left li a:hover{
+    color: #ffffff;
+    transition: all .3s;
+}
+.text-left li a:hover span{
+    border: 4px solid transparent;
+    border-top: 4px solid #ffffff;
+}
+.text-left .courses .content{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 48px;
+    background-color: #191e29;
+    text-align: left;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0 0 0 .18);
+}
+.content ul{
+    width: 130px;
+    height: 80px;
+    padding: 5px 0;
+}
+.content ul li{
+    width: 130px;
+}
+.text-left .courses .content a{
+    display: block;
+    padding: 5px 20px;
+}
+.text-left .courses:hover .content{
+    display: block;
+}
+.content a:hover{
+    background-color: #3c424e;
+}
+.text-right .register,.login{
+    width: 28px;
+    height: 20px;
+    border-radius: 4px;
+    float: right;
+    margin: 8px 0;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+.text-right .register{
+    border: 1px solid #11aa8c;
+    background-color: #11aa8c;
+    color: #ffffff;
+}
+.text-right .login{
+    border: 1px solid #777777;
+    color: #777777;
+    margin-right: 5px;
+}
+.text-right .register:hover{
+    background-color: #10be9d;
+}
+.text-right .login:hover{
+    background-color: #2d323e;
+}
+.text-right div{
+    float: right;
+}
+.form-control{
+    display: block;
+    height: 22px;
+    /*float: right;*/
+    outline: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    /*color: #555555;*/
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin: 7px 10px;
+    box-shadow: inset 0px 0px 1px rgb(0 0 0);
+}
+input::placeholder{
+    color: #cccccc;
+}
+.form-control:focus{
+    border-color: #66afe9;
+    box-shadow: inset 0 0 8px rgba(102 175 233  .6);
+}
+/*导航栏结束*/
+/*banner开始*/
+.nav-banner{
+    /*position: absolute;*/
+    /*top: 50px;*/
+    width: 100%;
+    height: 472px;
+    background-image: linear-gradient(180deg , #030d12 0% ,#1d3f4c 75%);
+
+
+}
+.banner{
+    height: 472px;
+    background: url("http://demo.erdangjiade.com/modals/8/856/demo/img/homepage-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    padding-top: 140px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.banner-left{
+    /*font-size: 0px;*/
+    width: 682px;
+    height: 230px;
+    display: inline-block;
+    float: left;
+}
+.banner .banner-left img{
+    display: block;
+    width: 583px;
+    float: left;
+}
+.banner-left a{
+    display: block;
+    margin-top: 24px;
+    background-color: #11aa8c;
+    font-size: 20px;
+    padding: 12px 36px;
+    border: 1px solid #11aa8c;
+    border-radius: 4px;
+    float: left;
+    color: #ffffff;
+}
+.banner-left a:hover{
+    background-color: #10be9d;
+}
+.banner-right{
+    width: 457.5px;
+    height: 266px;
+    float: right;
+    display: inline-block;
+}
+.banner-right .form-control{
+    width: 70%;
+    margin: 0 45.74px 24px;
+}
+.banner-right button{
+    width: 75%;
+    /*height: 38px;*/
+    line-height: 38px;
+    padding: 6px 12px;
+    margin: 8px 45.74px 0;
+    border: 1px solid #11aa8c;
+    background-color: #11aa8c;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 20px;
+}
+.banner-right button:hover{
+    background-color: #10be9d;
+    transition: all .3s;
+}
+.banner-right p{
+    font-size: 12px;
+    color: #ffffff99;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.banner-right p a{
+    color: #dddddd;
+}
+.banner-right p a:hover{
+    border-bottom: 1px solid #dddddd;
+}
+/*banner结束*/
+/*介绍开始*/
+.introduce{
+    width: 100%;
+    height: 283.7px;
+}
+.row{
+    height: 283.7px;
+    font-size: 16px;
+    color: #6a849d;
+}
+.row li{
+    width: 214.5px;
+    height: 190.854px;
+    padding: 35px;
+    float: left;
+}
+/*介绍结束*/
+/*工程师开始*/
+.engeneers{
+    width: 100%;
+    /*height: 546.854px;*/
+}
+.study-ways{
+    height: 546.854px;
+    padding: 50px 0;
+}
+.top{
+    height: 42.85px;
+    font-size: 30px;
+    color: #777777;
+    margin-bottom: 64px;
+}
+.top .line{
+    display: inline-block;
+    width: 12%;
+    border-top: 1px solid #777;
+    margin-bottom: 8px;
+}
+.top .title{
+    display: inline-block;
+    margin: 0 20px;
+}
+.study-ways .buttom{
+    width: 1140px;
+    height: 440px;
+}
+.study-ways .buttom ul{
+    width: 350px;
+    height: 440px;
+    float: left;
+    margin: 0 15px;
+    /*background-color: #11aa8c;*/
+}
+.study-ways .buttom ul:last-child{
+    margin-right: 0;
+}
+.study-ways .buttom ul>li{
+    position: relative;
+    box-shadow: 0 0 3px #ccc;
+    text-align: left;
+    width: 350px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.study-ways .buttom ul>li a{
+    display: block;
+    height: 100px;
+}
+.study-ways .buttom ul>li img{
+    margin-right: 30px;
+    width: 100px;
+    float: left;
+}
+.buttom-title{
+    display: inline-block;
+    font-weight: 200;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #565656;
+}
+.buttom-info{
+    /*display: inline-block;*/
+    font-size: 14px;
+    color: #9b9da2;
+    margin-top: 10px;
+    text-align: left;
+}
+.inner-info{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width: 250px;
+    height: 100px;
+    padding: 20px 11px;
+    background-color: #949494cc;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: left;
+    display: none;
+    /*-webkit-box-orient: vertical;*/
+}
+.inner-info span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*white-space: nowrap;*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+.study-ways .buttom ul>li a:hover .inner-info{
+    display: block;
+}
+/*工程师结束*/
+/*语言开始*/
+.language{
+    width: 100%;
+    /*height: 375px;*/
+}
+.laboratory{
+    height: 375px;
+    margin:  50px 0;
+    box-sizing: border-box;
+    clear: both;
+}
+.laboratory li{
+    width: 255px;
+    height: 233px;
+    padding: 0 15px;
+    margin: 10px 0;
+    float: left;
+}
+.laboratory li a{
+    display: block;
+    height: 223px;
+    box-shadow: 0 0 3px #ccc;
+}
+.buttom li img{
+    width: 255px;
+}
+.buttom div{
+    float: left;
+    margin-left: 10px;
+}
+.buttom div h3{
+    margin-top: 10px;
+}
+.buttom a:hover{
+    box-shadow: 0 3px 8px 0 #eee;
+}
+.buttom-look-more{
+    height: 34px;
+}
+.buttom-look-more a{
+    float: right;
+    font-size: 14px;
+    color: #787878;
+}
+.buttom-look-more a:hover{
+    color: #0c9;
+}
+/*语言结束*/
+/*页尾开始*/
+.footer{
+    width: 100%;
+    height: 170px;
+    padding-top: 20px;
+    background-color: #191e29;
+}
+.footer .footer-info{
+    height: 150px;
+}
+.footer-info .left{
+    float: left;
+    width: 390px;
+    height: 150px;
+    padding: 0 15px;
+    text-align: left;
+}
+.footer-info .left p{
+    font-size: 20px;
+    color: #00cc99;
+    margin-left: 15px;
+    margin-bottom: 12px;
+}
+.logo{
+    width: 180px;
+    height: 30px;
+}
+.left .logo a{
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #636469;
+    font-size: 16px;
+    /*color: #5cb85c;*/
+    margin: 0 15px;
+}
+.left .logo  span{
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+.color1{
+    color: #5cb85c;
+}
+.color2{
+    color: #5bc0de;
+}
+.color3{
+    color: #d9534f;
+}
+.code{
+    position: absolute;
+    bottom: 40px;
+    right: -70px;
+    width: 150px;
+    height: 150px;
+    background-color: #1f2532;
+    padding: 6px;
+    box-sizing: border-box;
+    display: none;
+}
+.code img{
+    width: 138px;
+}
+.left .logo a:hover .code{
+    display: block;
+}
+.right{
+    height: 150px;
+    /*float: left;*/
+}
+.right ul{
+    text-align: left;
+    width: 164px;
+    height: 150px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    float: left;
+}
+.right ul a{
+    display: block;
+    font-size: 12px;
+    color: #ffffff80;
+    margin-bottom: 3px;
+}
+.right ul .title1{
+    font-size: 14px;
+    color: #ffffff80;
+    margin-bottom: 10px;
+}
+.right ul a:hover{
+    color: #ffffff;
+}
+.copyright{
+    width: 100%;
+    background-color: #171918;
+    height: 50px;
+    line-height: 50px;
+    /*margin-top: 20px;*/
+}
+.copyright span,a{
+    color: #777777;
+}
+.copyright a:hover{
+    color: #ffffff;
+}
+/*页尾结束*/

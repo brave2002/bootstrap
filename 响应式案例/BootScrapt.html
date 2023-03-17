@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BootScrapt</title>
+    <style type="text/css">
+        /*普通样式开始*/
+        /*将没用的代码删除*/
+        .out{
+            /*width: 1100px;*/
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+        .out::after{/*清除浮动*/
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .out .box{
+            float: left;
+            /*width: 260px;*/
+            height: 300px;
+            background-color: #cccccc;
+            margin-bottom: 20px;
+            /*margin-right: 20px;*/
+        }
+        .out .box:nth-child(4n){
+            margin-right: 0px;
+        }
+        /*普通样式结束*/
+        /*响应式样式开始*/
+        /*移动优先原则，从小往大写*/
+        @media(max-width: 768px){/*这里的media最没有影响，不会给任何样式继承--------手机大小*/
+            .out{width: 100%;/*保证在压缩页面时下面不会出现滚动条*/
+            }
+            .out .box{
+                width: 320px;
+                float: none;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .out .box:nth-child(4n){
+                margin-right: auto;
+            }
+        }
+        @media(min-width: 768px){/*--------------平板大小*/
+            .out{
+                width: 680px;/*固定大盒子的宽度->这样也能保证下面不出现滚动条*/
+            }
+            .out .box{
+                width: 320px;
+                margin-right: 40px;
+            }
+            .out .box:nth-child(2n){
+                margin-right: 0px;
+            }
+        }
+        @media(min-width: 992px){/*--------------桌面大小*/
+            .out{
+                width: 960px;
+            }
+            .out .box{
+                width: 290px;
+                margin-right: 45px;
+            }
+            .out .box:nth-child(2n){
+                margin-right: 45px;
+            }
+            .out .box:nth-child(3n){
+                margin-right: 0px;
+            }
+        }
+        @media(min-width: 1200px){/*--大型适配器*/
+            .out{
+                width: 1100px;
+            }
+            .out .box{
+                width: 260px;
+                margin-right: 20px;
+            }
+            .out .box:nth-child(2n){
+                margin-right: 20px;
+            }
+            .out .box:nth-child(3n){
+                margin-right: 20px;
+            }
+            .out .box:nth-child(4n){
+                margin-right: 0px;
+            }
+        }
+        @media(min-width: 1400px){
+            .out{
+                width: 1300px;
+            }
+            .out .box{
+                width: 300px;
+                margin-right: 33.333px;
+            }
+            .out .box:nth-child(2n){
+                margin-right: 33.333px;
+            }
+            .out .box:nth-child(3n){
+                margin-right: 33.333px;
+            }
+            .out .box:nth-child(4n){
+                margin-right: 0px;
+            }
+
+        }
+        /*响应式样式结束*/
+    </style>
+</head>
+<body>
+<div class="out">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+    <div class="box">10</div>
+    <div class="box">11</div>
+    <div class="box">12</div>
+    <div class="box">13</div>
+    <div class="box">14</div>
+    <div class="box">15</div>
+    <div class="box">16</div>
+    <div class="box">17</div>
+    <div class="box">18</div>
+    <div class="box">19</div>
+    <div class="box">20</div>
+</div>
+</body>
+</html>

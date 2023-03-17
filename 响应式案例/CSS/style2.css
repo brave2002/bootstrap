@@ -1,0 +1,248 @@
+/*公共区域*/
+.pubTit{
+    text-align: center;
+    padding-bottom: 60px;
+    /*line-height: 1.5em;*/
+}
+.pubTit h2{
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    line-height: 1.5em;
+}
+.pubTit .line{
+    width: 50px;
+    height: 2px;
+    background-color: #00abd9;
+    display: inline-block;/*可以继承父级的text-align样式*/
+}
+/*头部模块*/
+.header {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #00abd9;
+    background-color: rgba(255,255,255,0.8);
+    padding: 0;
+}
+.header .nav-item{
+    padding: 0 20px;
+}
+.header .nav-item a{
+    position: relative;
+    text-align: center;
+}
+.header .nav-item a::after{
+/*after的父级元素是a本身*/
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    /*right: 45px;这样写不能根据字的字数弹性调节*/
+    left: calc(50% - 3px);/*记得加空格*/
+    /*left: 50%;*/
+    /*margin-left: -3px;*/
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #00abd9;
+    opacity: 0;
+    transition: .3s;
+}
+.header .nav-item a:hover{
+    color: #00abd9;
+}
+.header .nav-item:hover a::after{
+    opacity: 1;
+}
+
+@media(max-width: 768px) {
+    .nav-right li{
+        background-color: rgba(255,255,255,0.8);
+        border-bottom: 1px solid #cccccc;
+    }
+}
+
+@media(min-width: 768px) {
+    .nav-right{
+        background-color: transparent;
+    }
+
+}
+/*轮播图模块*/
+@media(max-width: 992px){
+    .banner1{
+        display: none;
+    }
+    .banner2{
+        display: block;
+    }
+
+}
+@media(min-width: 992px){
+    .banner1{
+        display: block;
+    }
+    .banner2{
+        display: none;
+    }
+
+}
+
+/*服务模块*/
+.serve{
+    padding: 70px 0;
+}
+.serve .boxIcon {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 1px solid #00abd9;
+    transition: .3s;
+}
+.serve .boxIcon .iconfont {
+    font-size: 80px;
+    color: #00abd9;
+}
+.serve h3 {
+    padding: 50px 0 25px;
+    font-size: 22px;
+    font-weight: 400;
+    transition: .3s;
+    text-align: center;
+}
+.serve p {
+    /* text-align: left; */
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #666666;
+    text-align: center;
+}
+.serve a:hover .boxIcon{
+    background-color: #00abd9;
+}
+.serve a:hover .iconfont{
+    color: #ffffff;
+}
+.serve a:hover h3{
+    color: #00abd9;
+}
+
+
+/*关于模块*/
+.about{
+    padding: 50px 0;
+    /*margin: 0 auto;*/
+    background: url(../img/aboutBg.jpg) no-repeat 50% 50% fixed;
+}
+.abtTit{
+    color: #ffffff;
+}
+.abtTit .line{
+    background-color: #ffffff;
+}
+.about .abtText{
+    font-size: 18px;
+    color: #ffffff;
+    padding: 0 70px;
+    line-height: 1.5em;
+    text-align: center;
+    opacity: .8;
+}
+.abtBtnGroup{
+    text-align: center;
+    margin-top: 100px;
+}
+.abtBtnGroup .btnleft{
+    width: 150px;
+    background-image: linear-gradient(to right, #f67b1f,#ef2d58);
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 10px;
+    opacity: .8;
+    transition: .3s;
+}
+.abtBtnGroup .btnright{
+    width: 150px;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 10px;
+    opacity: .8;
+    background-image: linear-gradient(to right,#0fcfd7,#5960ff);
+}
+.abtBtnGroup .btn:hover{
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+
+/*案例模块*/
+.case{
+    padding: 90px 0;
+}
+.case a{
+    margin-bottom: 20px;
+    position: relative;
+}
+.case a img.pic{
+    width: 100%;
+}
+/*.case .layer{*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    !*transform: rotateX(110deg);!*需要在父级上加perspective：600px,起到透视作用*!*!*/
+/*    transform-origin: bottom;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background-color: rgba(0,0,0,.8);*/
+/*    padding: 0 30px;*/
+/*    box-sizing: border-box;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    flex-direction: column;*/
+/*    transition: .3s;*/
+/*}*/
+/*.case .layer h3{*/
+/*    color: white;*/
+/*    font-weight: 400;*/
+/*    font-size: 20px;*/
+
+/*}*/
+
+
+
+/*底部模块*/
+.footer{ margin-top:90px; background: #f4f4f4; }
+.ftMain{min-height: 100px; padding-top:20px;}
+.ftLogo{   display:inline-block; }
+.ftLogo img{float: left;}
+.ftLogo .text{ float: left; padding-top:10px; padding-left:10px;}
+.ftLogo .text h1{ font-size:16px; font-weight: 400;}
+.ftContact{ padding:30px 0}
+.ftContact h4{
+    color: #00abd9; font-size: 18px; font-weight: 400;
+    padding-bottom:15px;
+}
+.ftLink{
+    padding-top:30px;
+}
+.ftLink .box{
+    display: inline-block;
+    margin-right: 5%;
+}
+
+.ftLink h4{
+    padding-bottom: 15px;
+}
+.ftLink a:hover{ color:#00abd9}
+.ftEwm{text-align: center;margin-top: 10px}
+
+.copyright{ background: #000; color:rgba(255,255,255,0.6); padding:10px 0; text-align: center;}
+.copyright span{ color:rgba(255,255,255,0.6)}
+.copyright a{ color:#fff;}
+
+

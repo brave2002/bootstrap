@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>利用bootstrap做响应式网站</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="CSS/style2.css">
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<!--导航开始-->
+<nav class="navbar navbar-expand-md  fixed-top header">
+    <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+            <img src="img/hd_logo.png" alt="" height="50px">
+        </a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse nav-content justify-content-end" id="collapsibleNavbar"><!-- 导航条=字+搜索+登录+注册-->
+            <ul class="navbar-nav nav nav-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">案例</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">服务</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">关于我们</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">新闻资讯</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--导航结束-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!--banner开始-->
+<section class="banner1">
+    <!-- 轮播 -->
+    <div id="demo1" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- 指示符 -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+        </div>
+
+        <!-- 轮播图片 -->
+        <div class="carousel-inner slider">
+            <div class="carousel-item active">
+                <img src="img/banner1.jpg" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner2.jpg" class="d-block" style="width:100%">
+            </div>
+        </div>
+
+        <!-- 左右切换按钮 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo1" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</section>
+
+<section class="banner2">
+    <!-- 轮播 -->
+    <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- 指示符 -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+        </div>
+
+        <!-- 轮播图片 -->
+        <div class="carousel-inner slider">
+            <div class="carousel-item active">
+                <img src="img/small1.jpg" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="img/small2.jpg" class="d-block" style="width:100%">
+            </div>
+        </div>
+
+        <!-- 左右切换按钮 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</section>
+
+<!--banner结束-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!--服务开始-->
+<section class="serve">
+    <div class="pubTit serTit">
+        <h2>我们专注的服务内容</h2>
+        <div class="line"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <a href="#" class="col-6 col-lg-3">
+                <div class="boxIcon">
+                    <span class="iconfont icon-shouji"></span>
+                </div>
+                <h3>APP开发</h3>
+                <p>以移动互联网及智能终端为载体，将用户和企业进行连接。公司提供的移动端服务具有高...</p>
+            </a>
+            <a href="#" class="col-6 col-lg-3 ">
+                <div class="boxIcon">
+                    <span class="iconfont icon-diannao"></span>
+                </div>
+                <h3>网站开发</h3>
+                <p>以移动互联网及智能终端为载体，将用户和企业进行连接。公司提供的移动端服务具有高...</p>
+            </a>
+            <a href="#" class="col-6 col-lg-3 ">
+                <div class="boxIcon">
+                    <span class="iconfont icon-gouwuche01"></span>
+                </div>
+                <h3>电商设计</h3>
+                <p>以移动互联网及智能终端为载体，将用户和企业进行连接。公司提供的移动端服务具有高...</p>
+            </a>
+            <a href="#" class="col-6 col-lg-3 ">
+                <div class="boxIcon">
+                    <span class="iconfont icon-jiaoyuxingye"></span>
+                </div>
+                <h3>技能教育</h3>
+                <p>以移动互联网及智能终端为载体，将用户和企业进行连接。公司提供的移动端服务具有高...</p>
+            </a>
+        </div>
+    </div>
+</section>
+<!--服务结束-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!--关于开始-->
+<section class=about>
+    <div class="pubTit abtTit">
+        <h2>我们是不断创新、专注研究、充满活力的<br>用户体验专家</h2>
+        <div class="line"></div>
+    </div>
+    <div class="container">
+        <div class="abtText" >
+            唯品互动网络成立于2010年，我是是一家具有创新、追求、
+            责任、活力设计开发公司。专注于移动互联网与智能可穿戴设备领域,主
+            要为客户提供APP设计开发、网站设计开发、软件设计开发、工业设计,
+            全方位个性 化设计开发服务。我们的价值与宗旨是为用户和客户打造最n
+            ice的设计，用设计提升产品和企业价值。
+        </div>
+        <div class="abtBtnGroup">
+            <a class="btn btnleft">咨询我们</a>
+            <a class="btn btnright">了解更多</a>
+        </div>
+    </div>
+</section>
+<!--关于结束-->
+<!---->
+<!---->
+<!--案例开始-->
+<section class="case">
+    <div class="pubTit">
+        <h2>我们的项目案例展示</h2>
+        <div class="line"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <a href="#" class="col-6 col-lg-4">
+                <img src="img/case1.jpg" alt="" class="pic">
+<!--                <div class="layer">-->
+<!--                    <h3>这是标题</h3>-->
+<!--                    <div class="line"></div>-->
+<!--                    <p>这是课程内容这是课程内容这是课程内容这是-->
+<!--                        课程内容这是课程内容这是课程内容这是课程-->
+<!--                        内容这是课程内容-->
+<!--                    </p>-->
+<!--                </div>-->
+            </a>
+            <a href="#" class="col-6 col-lg-4">
+                <img src="img/case2.jpg" alt="" class="pic">
+<!--                <div class="layer">-->
+<!--                    <h3>这是标题</h3>-->
+<!--                    <div class="line"></div>-->
+<!--                    <p>这是课程内容这是课程内容这是课程内容这是-->
+<!--                        课程内容这是课程内容这是课程内容这是课程-->
+<!--                        内容这是课程内容-->
+<!--                    </p>-->
+<!--                </div>-->
+            </a>
+            <a href="#" class="col-6 col-lg-4">
+                <img src="img/case3.jpg" alt="" class="pic">
+<!--                <div class="layer">-->
+<!--                    <h3>这是标题</h3>-->
+<!--                    <div class="line"></div>-->
+<!--                    <p>这是课程内容这是课程内容这是课程内容这是-->
+<!--                        课程内容这是课程内容这是课程内容这是课程-->
+<!--                        内容这是课程内容-->
+<!--                    </p>-->
+<!--                </div>-->
+            </a>
+            <a href="#" class="col-6 col-lg-4">
+                <img src="img/case4.jpg" alt="" class="pic">
+<!--                <div class="layer">-->
+<!--                    <h3>这是标题</h3>-->
+<!--                    <div class="line"></div>-->
+<!--                    <p>这是课程内容这是课程内容这是课程内容这是-->
+<!--                        课程内容这是课程内容这是课程内容这是课程-->
+<!--                        内容这是课程内容-->
+<!--                    </p>-->
+<!--                </div>-->
+            </a>
+            <a href="#" class="col-6 col-lg-4">
+                <img src="img/case5.jpg" alt="" class="pic">
+<!--                <div class="layer">-->
+<!--                    <h3>这是标题</h3>-->
+<!--                    <div class="line"></div>-->
+<!--                    <p>这是课程内容这是课程内容这是课程内容这是-->
+<!--                        课程内容这是课程内容这是课程内容这是课程-->
+<!--                        内容这是课程内容-->
+<!--                    </p>-->
+<!--                </div>-->
+            </a>
+            <a href="#" class="col-6 col-lg-4">
+                <img src="img/case6.jpg" alt="" class="pic">
+<!--                <div class="layer">-->
+<!--                    <h3>这是标题</h3>-->
+<!--                    <div class="line"></div>-->
+<!--                    <p>这是课程内容这是课程内容这是课程内容这是-->
+<!--                        课程内容这是课程内容这是课程内容这是课程-->
+<!--                        内容这是课程内容-->
+<!--                    </p>-->
+<!--                </div>-->
+            </a>
+            <a href="#" class="col-6 col-lg-4">
+                <img src="img/case7.jpg" alt="" class="pic">
+<!--                <div class="layer">-->
+<!--                    <h3>这是标题</h3>-->
+<!--                    <div class="line"></div>-->
+<!--                    <p>这是课程内容这是课程内容这是课程内容这是-->
+<!--                        课程内容这是课程内容这是课程内容这是课程-->
+<!--                        内容这是课程内容-->
+<!--                    </p>-->
+<!--                </div>-->
+            </a>
+            <a href="#" class="col-6 col-lg-4">
+                <img src="img/case8.jpg" alt="" class="pic">
+<!--                <div class="layer">-->
+<!--                    <h3>这是标题</h3>-->
+<!--                    <div class="line"></div>-->
+<!--                    <p>这是课程内容这是课程内容这是课程内容这是-->
+<!--                        课程内容这是课程内容这是课程内容这是课程-->
+<!--                        内容这是课程内容-->
+<!--                    </p>-->
+<!--                </div>-->
+            </a>
+            <a href="#" class="col-6 col-lg-4">
+                <img src="img/case9.jpg" alt="" class="pic">
+<!--                <div class="layer">-->
+<!--                    <h3>这是标题</h3>-->
+<!--                    <div class="line"></div>-->
+<!--                    <p>这是课程内容这是课程内容这是课程内容这是-->
+<!--                        课程内容这是课程内容这是课程内容这是课程-->
+<!--                        内容这是课程内容-->
+<!--                    </p>-->
+<!--                </div>-->
+            </a>
+
+        </div>
+
+    </div>
+</section>
+<!--案例结束-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!--客户列表开始-->
+<section class="client">
+    <div class="pubTit">
+        <h2>我们服务的客户</h2>
+        <div class="line"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <img class="col-4 col-lg-3" src="img/l1.jpg" alt="">
+            <img class="col-4 col-lg-3" src="img/l2.jpg" alt="">
+            <img class="col-4 col-lg-3" src="img/l3.jpg" alt="">
+            <img class="col-4 col-lg-3" src="img/l4.jpg" alt="">
+            <img class="col-4 col-lg-3" src="img/l5.jpg" alt="">
+            <img class="col-4 col-lg-3" src="img/l6.jpg" alt="">
+            <img class="col-4 col-lg-3" src="img/l7.jpg" alt="">
+            <img class="col-4 col-lg-3" src="img/l8.jpg" alt="">
+            <img class="col-4 col-lg-3" src="img/l9.jpg" alt="">
+            <img class="col-4 col-lg-3" src="img/l10.jpg" alt="">
+            <img class="col-4 col-lg-3" src="img/l11.jpg" alt="">
+            <img class="col-4 col-lg-3" src="img/l12.jpg" alt="">
+        </div>
+    </div>
+</section>
+<!--客户列表结束-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!--底部开始-->
+<footer class="footer">
+    <div class="container">
+
+        <a href="#" class="ftLogo">
+            <img src="img/ft_logo.png" alt="">
+            <div class="text">
+                <p>weipin.com</p>
+                <h1>唯品互动网络科技</h1>
+            </div>
+        </a>
+
+        <div class="container">
+            <div class="row">
+                <div class="ftContact col-lg-2">
+                    <h4>商务合作</h4>
+                    <p>
+                        邮箱：1513573894@163.com <br>
+                        手机：13088886666<br>
+                        Q Q：51333338888 <a target="_blank" href="tencent://message/?uin=1129946047&amp;Menu=yes">点击交谈</a><br>
+                        微博：@唯品互动网络<br>
+                    </p>
+                </div>
+
+                <div class="ftLink col-lg-8">
+                    <div class="box">
+                        <h4>服务</h4>
+                        <a href="#">全部</a><br>
+                        <a href="#">APP开发</a><br>
+                        <a href="#">网站设计制作</a><br>
+                        <a href="#">电商设计</a><br>
+                        <a href="#">技能教育</a>
+                    </div>
+
+                    <div class="box">
+                        <h4>服务</h4>
+                        <a href="#">全部</a><br>
+                        <a href="#">APP开发</a><br>
+                        <a href="#">网站设计制作</a><br>
+                        <a href="#">电商设计</a><br>
+                        <a href="#">技能教育</a>
+                    </div>
+
+                    <div class="box">
+                        <h4>服务</h4>
+                        <a href="#">全部</a><br>
+                        <a href="#">APP开发</a><br>
+                        <a href="#">网站设计制作</a><br>
+                        <a href="#">电商设计</a><br>
+                        <a href="#">技能教育</a>
+                    </div>
+
+                    <div class="box">
+                        <h4>服务</h4>
+                        <a href="#">全部</a><br>
+                        <a href="#">APP开发</a><br>
+                        <a href="#">网站设计制作</a><br>
+                        <a href="#">电商设计</a><br>
+                        <a href="#">技能教育</a>
+                    </div>
+                </div>
+
+                <div class="ftEwm col-lg-2">
+                    <img src="img/erweima.png" alt="">
+                    <p>唯品微信公众号</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        版权所有©<a href="#">唯品互动</a>Copyright 2010-<span class="year">2023</span> weipin design All rights reserved  <a href="#" target="_blank">鲁ICP备110000000号</a>
+    </div>
+</footer>
+<!--底部结束-->
+</body>
+</html>

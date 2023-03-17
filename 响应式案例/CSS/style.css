@@ -1,0 +1,581 @@
+/*公共区域开始*/
+.pubCon{
+    width: 1200px;
+    margin: 0 auto;
+}
+.pubTit{
+    text-align: center;
+    padding-bottom: 60px;
+    /*line-height: 1.5em;*/
+}
+.pubTit h2{
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    line-height: 1.5em;
+}
+.pubTit .line{
+    width: 50px;
+    height: 2px;
+    background-color: #00abd9;
+    display: inline-block;/*可以继承父级的text-align样式*/
+}
+.bodyBg{
+    /*需要写position：fixed*/
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    /*height: 100%;*/
+    display: none;
+    background-color: rgba(0,0,0,.2);
+    opacity: 0;
+}
+
+/*公共区域结束*/
+
+
+/*头部开始*/
+body{
+    /*background-color: #aaaaaa;*/
+}
+.header{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #00abd9;
+    background-color: rgba(255,255,255,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;/*因为下面也有定位，所以会覆盖上级*/
+}
+.hdCon{
+    height: 100%;
+    line-height: 100%;
+    display: flex;
+    justify-content: space-between;/*让两个盒子一左一右*/
+    align-items: center;/*让盒子居中*/
+}
+.hdNav ul{
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+}
+.hdNav ul a{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    padding: 0 30px;
+    transition: color .3s;
+}
+
+.hdNav ul li:hover a,.hdNav ul li.active a{
+    color: #00abd9;
+}
+.hdNav ul a::after{/*after的父级元素是a本身*/
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 6px;
+    /*right: 45px;这样写不能根据字的字数弹性调节*/
+    left: calc(50% - 3px);/*记得加空格*/
+    /*left: 50%;*/
+    /*margin-left: -3px;*/
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #00abd9;
+    opacity: 0;
+    transition: .3s;
+
+}
+.hdNav ul li:hover a::after,.hdNav ul li.active a::after{
+    opacity: 1;
+}
+/*千万不要写成.hdNav ul a:hover a::after{opacity: 1}没有效果*/
+.hdMenu{
+    width: 42px;
+    border: 2px solid #aaa;
+    border-radius: 3px;
+    padding: 0 5px;
+    cursor: pointer;
+    display: none;
+}
+.hdMenu span{
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #aaaaaa;
+    margin: 8px auto;
+}
+/*头部结束*/
+
+
+
+/*banner开始*/
+.banner{
+    height: 500px;
+}
+.banner a{
+    display: block;
+    height: 500px;
+    background: no-repeat center;
+    cursor: move;
+    /*cursor: pointer;*/
+}
+.banner a.small{
+    display: none;
+}
+.banner .swiper-pagination-bullet{
+    background-color: #ffffff;
+}
+/*banner结束*/
+
+
+/*服务开始*/
+.serve{
+    padding: 70px 0;
+}
+.serCon{
+    display: flex;
+    text-align: center;
+}
+.serCon .box{
+    display: block;
+    height: 380px;
+    padding: 0 30px;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+}
+.serCon .boxIcon{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 1px solid #00abd9;
+    transition: .3s;
+}
+.serCon h3{
+    padding: 50px 0 25px;
+    font-size: 22px;
+    font-weight: 400;
+    transition: .3s;
+}
+.serCon p{
+    /*text-align: left;*/
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #666666;
+}
+.serCon .boxIcon .iconfont{
+    color: #00abd9;
+    font-size: 90px;
+}
+.serCon .box:hover .boxIcon{
+    background-color: #00abd9;
+}
+.serCon .box:hover .iconfont{
+    color: #ffffff;
+}
+.serCon .box:hover h3{
+    color: #00abd9;
+}
+/*服务结束*/
+
+
+/*关于开始*/
+.about{
+    padding: 50px 0;
+    /*margin: 0 auto;*/
+    background: url(../img/aboutBg.jpg) no-repeat 50% 50% fixed;
+}
+.abtTit{
+    color: #ffffff;
+}
+.abtTit .line{
+    background-color: #ffffff;
+}
+.abtCon .abtText{
+    font-size: 18px;
+    color: #ffffff;
+    padding: 0 70px;
+    line-height: 1.5em;
+    text-align: center;
+    opacity: .8;
+}
+.abtCon .btnGroup{
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    padding-top: 100px;
+}
+.btnGroup .btn {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background-image: linear-gradient(to right, #f67b1f,#ef2d58);
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 10px;
+    opacity: .8;
+}
+.btnGroup .btnright{
+    background-image: linear-gradient(to right,#0fcfd7,#5960ff);
+}
+.btnGroup .btn:hover{
+    opacity: 1;
+    transform: scale(1.02);
+}
+/*关于结束*/
+
+
+/*案例开始*/
+.case{
+    width: 100%;
+    padding: 90px 0;
+}
+.caseCon{
+    display: flex;
+    justify-content: space-between;/*将父级盒子均分若干个小盒子后，出现相同间距*/
+    flex-wrap: wrap;/*自动换行*/
+}
+.caseCon .box{
+    position: relative;
+    display: block;
+    width: 32%;
+    margin-bottom: 20px;
+    perspective: 600px;
+    overflow: hidden;
+}
+.caseCon .pic{
+    display: block;/*图片都会有5px的像素间隙，所以需要转换成block*/
+    width: 100%;
+}
+.caseCon .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateX(110deg);/*需要在父级上加perspective：600px,起到透视作用*/
+    transform-origin: bottom;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    padding: 0 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .3s;
+}
+.caseCon .layer h3{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+.caseCon .line{
+    width: 30px;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 10px 0 20px;
+}
+.caseCon p{
+    color: #fff;
+    opacity: 0.6;
+    text-align: center;
+    line-height: 1.8em;
+    font-size: 14px;
+}
+.caseCon .box:hover .layer{
+    transform: rotateX(0deg);
+}
+/*案例结束*/
+
+
+/*客户列表*/
+.clientCon ul{ overflow: hidden;}
+.clientCon li{ float:left; width:200px; padding:10px; box-sizing:border-box;}
+.clientCon li img{ width:100%}
+
+
+
+/*底部模块*/
+.footer{ margin-top:90px; background: #f4f4f4; }
+.ftMain{min-height: 100px; padding-top:20px;}
+.ftLogo{   display:inline-block; }
+.ftLogo img{float: left;}
+.ftLogo .text{ float: left; padding-top:10px; padding-left:10px;}
+.ftLogo .text h1{ font-size:16px; font-weight: 400;}
+
+.ftCon{ display: flex; justify-content: space-between; padding:30px 0}
+.ftCon h4{ font-size: 18px; font-weight: 400; padding-bottom:15px;}
+.ftLink{ display: flex;}
+.ftLink .box{ padding:0 20px;}
+.ftLink a{ display: block; line-height: 2em;}
+.ftLink a:hover{ color:#00abd9}
+
+.ftContact h4{ color:#00abd9}
+.ftContact p{ line-height: 2em;}
+
+.ftEwm{text-align: center;}
+
+.copyright{ background: #000; color:rgba(255,255,255,0.6); padding:10px 0; text-align: center;}
+.copyright span{ color:rgba(255,255,255,0.6)}
+.copyright a{ color:#fff;}
+
+
+
+/*手机和平板端*/
+@media(max-width: 992px){
+    /*公共开始*/
+    .pubCon{width: 100%;padding: 0 20px;box-sizing: border-box}
+    .pubTit{
+        padding-bottom: 40px;
+    }
+    .pubTit h2{
+        font-size: 28px;
+
+    }
+
+    /*公共结束*/
+
+
+
+    /*头部开始*/
+    .hdCon{position: relative;
+    }
+    .hdNav{display: none;width: 100%;position: absolute;top: 61px;left: 0;
+        text-align: center;}
+    .hdNav ul{flex-direction: column;
+        background-color: rgba(255,255,255,.9);height: auto}
+    .hdNav li{
+        border-bottom: 1px solid #cccccc;
+    }
+    .hdNav ul a{line-height:50px;}
+    /*千万不要写成.hdNav ul a:hover a::after{opacity: 1}没有效果*/
+    .hdMenu{display: block;}
+    .hdMenu span{
+        transform-origin: left;
+        transition: .3s;
+    }
+    .hdMenu.active span:nth-child(1){
+        transform: rotate(27deg);
+        width: 44px;}
+    .hdMenu.active span:nth-child(2){opacity: 0;}
+    .hdMenu.active span:nth-child(3){
+        transform: rotate(-27deg);
+        width: 44px;
+    }
+    /*头部结束*/
+
+
+
+    /*banner开始*/
+    .banner{
+        height: 681px;
+    }
+    .banner a{
+        height: 681px;
+        background-size: cover;
+    }
+    .banner a.small{
+        display: block;
+    }
+    .banner a.big{
+        display: none;
+    }
+    /*banner结束*/
+
+
+    /*服务开始*/
+    .serve{
+        padding: 60px 0;
+    }
+    .serCon{
+        flex-wrap: wrap;/*自动换行*/
+    }
+    .serCon .box{
+        width: 50%;
+        height: auto;
+        padding: 0 10px;
+        margin-bottom: 30px;
+    }
+    .serCon .boxIcon{
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+    }
+    .serCon h3{
+        padding: 30px 0 15px;
+        font-size: 20px;
+    }
+    .serCon .boxIcon .iconfont{
+        font-size: 60px;
+    }
+
+    /*服务结束*/
+
+
+    /*关于开始*/
+    .about{
+        padding: 50px 0;
+        /*margin: 0 auto;*/
+        background-attachment: scroll;/*手机和平板不会显示PC端的background-img:fixed样式*/
+    }
+    .abtTit{
+        padding: 0;
+    }
+    .abtTit br{
+        display: none;
+    }
+    .abtCon .btnGroup{
+        padding-top: 30px;
+    }
+    .btnGroup .btn {
+        width: 60%;
+    }
+    .btnGroup .btnright{
+        margin-top: 20px;
+    }
+    /*关于结束*/
+
+
+    /*案例开始*/
+    .case{
+        padding: 50px 0;
+    }
+    .caseCon{
+        display: flex;
+
+    }
+    .caseCon .box{
+        width: 49%;
+    }
+    .caseCon .box:last-child{
+        display: none;
+    }
+    /*案例结束*/
+
+
+    /*客户列表*/
+    .clientCon li{width: 33.33% }
+
+
+    /*底部模块*/
+    .footer{ margin-top:50px; }
+    .ftMain{
+        position: relative;    }
+    .ftCon{ display: flex; flex-direction: column; }
+    .ftLink{ display: flex; justify-content: space-between;margin-top: 20px;}
+    .ftLink .box{ padding:0;}
+    .ftEwm{position: absolute;top: 105px;right: 20px}
+
+}
+
+/*小显示器*/
+@media(min-width: 992px){
+    /*公共区域开始*/
+    .pubCon{
+        width: 960px;
+    }
+    .pubTit{
+        padd-bottom: 50px;
+    }
+    .pubTit h2{
+        font-size: 28px;
+    }
+    /*公共区域结束*/
+
+    /*服务开始*/
+    .serve{
+        padding: 60px 0;
+    }
+    .serCon .box{
+        height: auto;
+        padding: 0 20px;
+        width: 25%;
+    }
+    .serCon .boxIcon{
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+    }
+    .serCon .boxIcon .iconfont{
+        font-size: 80px;
+    }
+    .serCon h3{
+        padding: 40px 0 20px;
+
+    }
+    /*服务结束*/
+
+    /*关于开始*/
+    .about{
+       background-attachment: scroll;
+    }
+    .abtCon .abtText{
+        padding: 0;
+    }
+    /*关于结束*/
+
+    /*客户列表*/
+    .clientCon li{ width: 25%}
+}
+
+
+@media(min-width: 1300px){
+    .pubCon{
+        width: 1200px;
+    }
+    .pubTit{
+        padd-bottom: 50px;
+    }
+    .pubTit h2{
+        font-size: 28px;
+    }
+
+
+    /*服务开始*/
+    .serve{
+        padding: 90px 0 50px;
+    }
+    .serCon .box{
+        height: 380px;
+        padding: 0 30px;
+    }
+    .serCon .boxIcon{
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+    }
+    .serCon .boxIcon .iconfont{
+        font-size: 90px;
+    }
+    .serCon h3{
+        padding: 50px 0 25px;
+    }
+    /*服务结束*/
+
+
+    /*关于开始*/
+    .about{
+        background-attachment: fixed;
+    }
+    .abtCon .abtText{
+        padding: 0 70px;
+    }
+    /*关于结束*/
+
+
+
+    /*客户列表*/
+    .clientCon li{ width: 25%}
+}
+
+

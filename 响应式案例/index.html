@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>唯品网络科技有限公司</title>
+    <link rel="stylesheet" href="CSS/swiper.min.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/public.js"></script>
+</head>
+
+<body>
+<!--头部开始-->
+<header class="header">
+        <div class="pubCon hdCon">
+            <a href="#">
+                <img src="img/hd_logo.png" alt="">
+            </a>
+            <nav class="hdNav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="#">案例</a></li>
+                    <li><a href="#">服务</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="#">新闻资讯</a></li>
+                </ul>
+            </nav>
+            <div class="hdMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+<!--头部结束-->
+<!---->
+<!---->
+<!--banner开始-->
+<section class="banner">
+<!--以下的代码可以通过访问swiper.com.cn访问,拿第一步和第三步的代码复制到该地方即可-->
+<!--        咱们这就不加pubCon了，因为会把页面宽度缩小-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#" class="big" style="background-image: url(img/banner1.jpg)"></a>
+                    <a href="#" class="small" style="background-image: url(img/small1.jpg)"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="big" style="background-image: url(img/banner2.jpg)"></a>
+                    <a href="#" class="small" style="background-image: url(img/small2.jpg)"></a>
+                </div>
+            </div>
+            <!--        如果需要分页器-->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+<script>
+        var bnrSwiper = new Swiper ('.banner .swiper-container', {/*一般写上父级下的swiper*/
+            loop: true, // 循环模式选项
+            // 如果需要分页器
+            pagination: {
+                el: '.banner .swiper-pagination',
+            }
+        })
+    </script>
+<!--banner结束-->
+<!---->
+<!---->
+<!--服务开始-->
+<section class="serve">
+    <div class="pubTit serTit">
+        <h2>我们专注的服务内容</h2>
+        <div class="line"></div>
+    </div>
+    <div class="pubCon serCon">
+        <a href="#" class="box">
+            <div class="boxIcon">
+                <span class="iconfont icon-shouji"></span>
+            </div>
+            <h3>APP开发</h3>
+            <p>以移动互联网及智能终端为载体，将用户和企业进行连接。公司提供的移动端服务具有高...</p>
+        </a>
+        <a href="#" class="box">
+            <div class="boxIcon">
+                <span class="iconfont icon-diannao"></span>
+            </div>
+            <h3>网站开发</h3>
+            <p>以移动互联网及智能终端为载体，将用户和企业进行连接。公司提供的移动端服务具有高...</p>
+        </a>
+        <a href="#" class="box">
+            <div class="boxIcon">
+                <span class="iconfont icon-gouwuche01"></span>
+            </div>
+            <h3>电商设计</h3>
+            <p>以移动互联网及智能终端为载体，将用户和企业进行连接。公司提供的移动端服务具有高...</p>
+        </a>
+        <a href="#" class="box">
+            <div class="boxIcon">
+                <span class="iconfont icon-jiaoyuxingye"></span>
+            </div>
+            <h3>技能教育</h3>
+            <p>以移动互联网及智能终端为载体，将用户和企业进行连接。公司提供的移动端服务具有高...</p>
+        </a>
+    </div>
+</section>
+<!--服务结束-->
+<!---->
+<!---->
+<!--关于开始-->
+<section class=about>
+<div class="pubTit abtTit">
+    <h2>我们是不断创新、专注研究、充满活力的<br>用户体验专家</h2>
+    <div class="line"></div>
+</div>
+<div class="pubCon abtCon">
+    <div class="abtText" >
+        唯品互动网络成立于2010年，我是是一家具有创新、追求、
+        责任、活力设计开发公司。专注于移动互联网与智能可穿戴设备领域,主
+        要为客户提供APP设计开发、网站设计开发、软件设计开发、工业设计,
+        全方位个性 化设计开发服务。我们的价值与宗旨是为用户和客户打造最n
+        ice的设计，用设计提升产品和企业价值。
+    </div>
+    <div class="btnGroup">
+        <a class="btn btnleft">咨询我们</a>
+        <a class="btn btnright">了解更多</a>
+    </div>
+</div>
+</section>
+<!--关于结束-->
+<!---->
+<!---->
+<!--案例开始-->
+<section class="case">
+    <div class="pubTit">
+        <h2>我们的项目案例展示</h2>
+        <div class="line"></div>
+    </div>
+    <div class="pubCon caseCon">
+        <a href="#" class="box">
+            <img src="img/case1.jpg" alt="" class="pic">
+            <div class="layer">
+                <h3>这是标题</h3>
+                <div class="line"></div>
+                <p>这是课程内容这是课程内容这是课程内容这是
+                    课程内容这是课程内容这是课程内容这是课程
+                    内容这是课程内容
+                </p>
+            </div>
+        </a>
+        <a href="#" class="box">
+            <img src="img/case2.jpg" alt="" class="pic">
+            <div class="layer">
+                <h3>这是标题</h3>
+                <div class="line"></div>
+                <p>这是课程内容这是课程内容这是课程内容这是
+                    课程内容这是课程内容这是课程内容这是课程
+                    内容这是课程内容
+                </p>
+            </div>
+        </a>
+        <a href="#" class="box">
+            <img src="img/case3.jpg" alt="" class="pic">
+            <div class="layer">
+                <h3>这是标题</h3>
+                <div class="line"></div>
+                <p>这是课程内容这是课程内容这是课程内容这是
+                    课程内容这是课程内容这是课程内容这是课程
+                    内容这是课程内容
+                </p>
+            </div>
+        </a>
+        <a href="#" class="box">
+            <img src="img/case4.jpg" alt="" class="pic">
+            <div class="layer">
+                <h3>这是标题</h3>
+                <div class="line"></div>
+                <p>这是课程内容这是课程内容这是课程内容这是
+                    课程内容这是课程内容这是课程内容这是课程
+                    内容这是课程内容
+                </p>
+            </div>
+        </a>
+        <a href="#" class="box">
+            <img src="img/case5.jpg" alt="" class="pic">
+            <div class="layer">
+                <h3>这是标题</h3>
+                <div class="line"></div>
+                <p>这是课程内容这是课程内容这是课程内容这是
+                    课程内容这是课程内容这是课程内容这是课程
+                    内容这是课程内容
+                </p>
+            </div>
+        </a>
+        <a href="#" class="box">
+            <img src="img/case6.jpg" alt="" class="pic">
+            <div class="layer">
+                <h3>这是标题</h3>
+                <div class="line"></div>
+                <p>这是课程内容这是课程内容这是课程内容这是
+                    课程内容这是课程内容这是课程内容这是课程
+                    内容这是课程内容
+                </p>
+            </div>
+        </a>
+        <a href="#" class="box">
+            <img src="img/case7.jpg" alt="" class="pic">
+            <div class="layer">
+                <h3>这是标题</h3>
+                <div class="line"></div>
+                <p>这是课程内容这是课程内容这是课程内容这是
+                    课程内容这是课程内容这是课程内容这是课程
+                    内容这是课程内容
+                </p>
+            </div>
+        </a>
+        <a href="#" class="box">
+            <img src="img/case8.jpg" alt="" class="pic">
+            <div class="layer">
+                <h3>这是标题</h3>
+                <div class="line"></div>
+                <p>这是课程内容这是课程内容这是课程内容这是
+                    课程内容这是课程内容这是课程内容这是课程
+                    内容这是课程内容
+                </p>
+            </div>
+        </a>
+        <a href="#" class="box">
+            <img src="img/case9.jpg" alt="" class="pic">
+            <div class="layer">
+                <h3>这是标题</h3>
+                <div class="line"></div>
+                <p>这是课程内容这是课程内容这是课程内容这是
+                    课程内容这是课程内容这是课程内容这是课程
+                    内容这是课程内容
+                </p>
+            </div>
+        </a>
+
+
+    </div>
+</section>
+<!--案例结束-->
+<!---->
+<!---->
+<!--客户列表开始-->
+<section class="client">
+    <div class="pubTit">
+        <h2>我们服务的客户</h2>
+        <div class="line"></div>
+    </div>
+    <div class="clientCon pubCon">
+        <ul>
+            <li><img src="img/l1.jpg" alt=""></li>
+            <li><img src="img/l2.jpg" alt=""></li>
+            <li><img src="img/l3.jpg" alt=""></li>
+            <li><img src="img/l4.jpg" alt=""></li>
+            <li><img src="img/l5.jpg" alt=""></li>
+            <li><img src="img/l6.jpg" alt=""></li>
+            <li><img src="img/l7.jpg" alt=""></li>
+            <li><img src="img/l8.jpg" alt=""></li>
+            <li><img src="img/l9.jpg" alt=""></li>
+            <li><img src="img/l10.jpg" alt=""></li>
+            <li><img src="img/l11.jpg" alt=""></li>
+            <li><img src="img/l12.jpg" alt=""></li>
+        </ul>
+    </div>
+</section>
+<!--客户列表结束-->
+<!---->
+<!---->
+<!--底部开始-->
+<footer class="footer">
+    <div class="ftMain pubCon">
+
+        <a href="#" class="ftLogo">
+            <img src="img/ft_logo.png" alt="">
+            <div class="text">
+                <p>weipin.com</p>
+                <h1>唯品互动网络科技</h1>
+            </div>
+        </a>
+
+        <div class="ftCon">
+            <div class="ftContact">
+                <h4>商务合作</h4>
+                <p>
+                    邮箱：1513573894@163.com <br>
+                    手机：13088886666<br>
+                    Q Q：51333338888 <a target="_blank" href="tencent://message/?uin=1129946047&amp;Menu=yes">点击交谈</a><br>
+                    微博：@唯品互动网络<br>
+                </p>
+            </div>
+
+            <div class="ftLink">
+                <div class="box">
+                    <h4>服务</h4>
+                    <a href="#">全部</a>
+                    <a href="#">APP开发</a>
+                    <a href="#">网站设计制作</a>
+                    <a href="#">电商设计</a>
+                    <a href="#">技能教育</a>
+                </div>
+
+                <div class="box">
+                    <h4>服务</h4>
+                    <a href="#">全部</a>
+                    <a href="#">APP开发</a>
+                    <a href="#">网站设计制作</a>
+                    <a href="#">电商设计</a>
+                    <a href="#">技能教育</a>
+                </div>
+
+                <div class="box">
+                    <h4>服务</h4>
+                    <a href="#">全部</a>
+                    <a href="#">APP开发</a>
+                    <a href="#">网站设计制作</a>
+                    <a href="#">电商设计</a>
+                    <a href="#">技能教育</a>
+                </div>
+
+                <div class="box">
+                    <h4>服务</h4>
+                    <a href="#">全部</a>
+                    <a href="#">APP开发</a>
+                    <a href="#">网站设计制作</a>
+                    <a href="#">电商设计</a>
+                    <a href="#">技能教育</a>
+                </div>
+            </div>
+
+
+            <div class="ftEwm">
+                <img src="img/erweima.png" alt="">
+                <p>唯品微信公众号</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        版权所有©<a href="#">唯品互动</a>Copyright 2010-<span class="year">2023</span> weipin design All rights reserved  <a href="#" target="_blank">鲁ICP备110000000号</a>
+    </div>
+</footer>
+<!--底部结束-->
+
+<!--屏幕的遮罩层-->
+<div class="bodyBg" ></div>
+
+</body>
+</html>
